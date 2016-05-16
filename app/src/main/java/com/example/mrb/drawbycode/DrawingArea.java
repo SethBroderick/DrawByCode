@@ -54,6 +54,10 @@ public class DrawingArea extends View // You need to extend the View class
         pntRedPaint.setColor(Color.RED);
         pntRedPaint.setStrokeWidth(3);
 
+
+
+
+
     }
 
     protected void onSizeChanged(int w, int h, int oldw, int oldh)
@@ -73,9 +77,19 @@ public class DrawingArea extends View // You need to extend the View class
 
         super.onDraw(canvas);
 
-        canvas.drawCircle((float) 50.0, (float) 50.0, (float) 50.0, pntBlackPaint);
+        canvas.drawCircle((float) 100.0, (float) 100.0, (float) 100.0, pntBlackPaint);
 
-        canvas.drawRect((float) 50.0, (float) 50.0, (float) 350.0, (float) 350.0, pntRedPaint);
+        canvas.drawRect((float) 350.0, (float) 400.0, (float) 350.0, (float) 400.0, pntBlackPaint);
+
+        canvas.drawRect((float) 253.0, (float) 200.0, (float) 253.0, (float) 200.0, pntBlackPaint);
+
+        canvas.drawRect((float) 253.0, (float) 153.0, (float) 253.0, (float) 153.0, pntBlackPaint);
+
+        canvas.drawRect((float) 100.0, (float) 200.0, (float) 100.0, (float) 200.0, pntBlackPaint);
+
+        canvas.drawRect((float) 100.0, (float) 200.0, (float) 100.0, (float) 200.0, pntBlackPaint);
+
+
 
     }
 
