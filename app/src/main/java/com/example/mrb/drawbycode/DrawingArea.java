@@ -43,6 +43,7 @@ public class DrawingArea extends View // You need to extend the View class
     {
         // This method is called once when the DrawingArea object is made.
         // It is best practice to handle the set-up of our Paint objects here rather than in onDraw()
+        // Colours used for stickman
 
         pntTextPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
         pntBlackPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
@@ -74,10 +75,11 @@ public class DrawingArea extends View // You need to extend the View class
     {
         // This method is where we issue our actual drawing commands.
         // The Canvas parameter is what we draw ON; the Paint objects defined above are what we draw WITH.
+        // Stickman sizes
 
         super.onDraw(canvas);
 
-        canvas.drawCircle((float) 100.0, (float) 100.0, (float) 100.0, pntBlackPaint);
+         canvas.drawCircle((float) 100.0, (float) 100.0, (float) 100.0, pntBlackPaint);
 
         canvas.drawRect((float) 350.0, (float) 400.0, (float) 350.0, (float) 400.0, pntBlackPaint);
 
